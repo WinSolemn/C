@@ -1,0 +1,20 @@
+#include<stdio.h>
+void main()
+{ int i,n,x,a[10],c=0;
+printf("Enter the value of n:");
+scanf("%d",&n);
+printf("Enter the numbers:\n");
+for(i=0;i<n;i++)
+scanf("%d",&a[i]);
+printf("Enter item:");
+scanf("%d",&x);
+  
+for(i=0;i<n;i++)
+{ if(a[i]==x)
+{printf("Item at position:%d\n",i);
+c++;} }
+
+if(c==0)
+printf("Item not found");
+}
+
